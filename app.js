@@ -1,14 +1,17 @@
+const Reader = require("./Reader");
 const Processor = require("./Processor");
-var Reader = require("./Reader");
+const Table = require("./Table");
 
 var leitor = new Reader();
 
 async function main(){
     var dados = await leitor.Read("./users.csv");
-    // console.log(dados);
 
     var DtProcess = Processor.Process(dados);
-    return DtProcess
+    
+    var usuarios = new Table(DtProcess);
+
+    console.log(usuarios.RowCount);
 }
 
 main();

@@ -7,7 +7,7 @@ class Processor {
             var arr = row.split(",");
             rows.push(arr);
         })
-        console.log(rows);
+        // console.log(rows);
     }
 }
 
