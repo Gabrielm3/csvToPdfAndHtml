@@ -6,8 +6,8 @@ export class DataProcessor {
       throw new Error("Empty or invalid input data");
     }
 
-    const splitPattern = data.includes("\r\n") ? "\r\n" : "\n";
-    const rows = data.split(splitPattern).filter((row) => row.trim() !== "");
+    const lineDelimiter = data.includes("\r\n") ? "\r\n" : "\n";
+    const rows = data.split(lineDelimiter).filter((row) => row.trim() !== "");
 
     return rows.map((row) => row.split(",").map((cell) => cell.trim()));
   }
