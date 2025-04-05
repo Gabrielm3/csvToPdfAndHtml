@@ -1,6 +1,6 @@
 # CSV to PDF & HTML Converter
 
-A lightweight TypeScript application that transforms CSV data into well-formatted HTML tables and PDF documents.
+A TypeScript-based utility for converting CSV datasets into structured HTML tables and high-quality PDF outputs.
 
 ## Overview
 
