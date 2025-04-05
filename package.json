@@ -1,5 +1,5 @@
 {
-  "name": "csv-to-pdf-html",
+  "name": "csvToPdfAndHtml",
   "version": "1.0.0",
   "description": "Application for processing CSV files into HTML and PDF formats",
   "main": "dist/app.js",
